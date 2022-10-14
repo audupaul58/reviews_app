@@ -1,0 +1,62 @@
+@import '../../styles/color.module';
+@import '../../styles/breakpoints.module';
+
+
+.maincons{
+    //display: flex;
+    //max-width: 800px;
+    
+
+    .rowclass{
+       // display: grid;
+        //grid-template-columns: 1fr 1fr 1fr;
+        gap: 1vw;
+        //max-width: 80%;
+
+        @include breakpoint(small){
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, max(25px, 100%/9)), 1fr));
+        }
+
+        .Colclass{
+            //border: 2px solid green;
+            margin: 5px;
+            padding: 5px 0;
+            -webkit-box-shadow: -4px 10px 11px 5px rgba(26,1,26,1);
+-moz-box-shadow: -4px 10px 11px 5px rgba(26,1,26,1);
+box-shadow: -4px 10px 11px 5px rgba(26,1,26,1);
+
+.itemLogo{
+    display: flex;
+    align-items: center;
+
+
+.indText{
+    //margin-top: 5px;
+    background-color:$color6;
+    width: min(40px, 10vw);
+    height: min(40px, 10vw);
+    line-height: min(40px, 10vw);
+    border-radius: 50% ;
+    aspect-ratio: 1/1;
+    text-align: center;
+    margin-inline: min(5px, 1vw);
+    color: aliceblue;
+    font-weight: bolder;
+    }
+
+    h6{
+        margin-bottom:  0;
+        margin-top: 15px;
+        font-weight: 800;
+    }
+
+    p{
+        margin: 0;
+        padding: 0;
+        font-size: small;
+        margin-left: 5px;
+    }
+}
+        }
+    }
+}

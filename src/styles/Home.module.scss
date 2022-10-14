@@ -1,0 +1,72 @@
+@import './breakpoints.module';
+
+.main_container{
+
+
+    width: 100vw;
+    align-items: center;
+    padding: 2rem;
+   
+
+    @include breakpointdown(small){
+        padding: 10px;
+    }
+    
+
+    .main_content{
+        display: grid;
+        text-align: center;
+        margin-inline: min(1em, 3px);
+        column-gap: 2vw;
+        grid-template-columns: repeat(auto-fit, minmax(min(320px, max(64px, 100%/3)), 1fr));
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+       
+
+        .main_item{
+            padding-top: 2rem;
+            cursor: pointer;
+            text-align: center;
+            justify-content: flex-start;
+            display: flex;
+            height: 100px;
+            margin-bottom: 10px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            font-size: max(10px, 1vw);
+            
+            .avat{
+                background-color: rgb(179, 174, 174);
+                width: min(40px, 10vw);
+                height: min(40px, 10vw);
+                line-height: min(40px, 10vw);
+                border-radius: 50% ;
+                aspect-ratio: 1/1;
+                text-align: center;
+                margin-inline: min(10px, 1vw);
+                color: aliceblue;
+                font-weight: bolder;
+               
+        }
+
+        h2{
+            margin-top: -3px;
+            padding:  0;
+            margin: 0;
+            font-size: min(12px, 5vw);
+            text-align: start;
+
+        }
+
+        p{
+            margin-top: 0;
+            padding-top: 0;
+            font-weight: bolder;
+            text-align: start;
+            font-size: max(8px, 0.7vw);
+        }
+        }
+   
+        
+    }
+}
