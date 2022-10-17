@@ -1,0 +1,49 @@
+@import '../../../../styles/breakpoints.module.scss';
+
+.main_container{
+
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    padding: 2rem;
+    
+   
+
+   .innerCon{
+    min-width: 90vw;
+    
+   
+
+    @include breakpoint(small){
+        min-width: 50vw;
+    }
+
+    .formInput{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        .items{
+            width: 100%;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: rgb(241, 233, 233);
+            border: none;
+           
+        }
+
+        button{
+            background-color: green;
+        }
+    
+    }
+
+    
+   }
+    
+
+  
+   
+        
+    
+}

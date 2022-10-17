@@ -8,13 +8,13 @@
     
 
     .rowclass{
-       // display: grid;
+       display: grid;
         //grid-template-columns: 1fr 1fr 1fr;
         gap: 1vw;
         //max-width: 80%;
 
         @include breakpoint(small){
-            grid-template-columns: repeat(auto-fit, minmax(min(280px, max(25px, 100%/9)), 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, max(25px, 100%/3)), 1fr));
         }
 
         .Colclass{

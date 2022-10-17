@@ -1,0 +1,63 @@
+@import '../styles/color.module.scss';
+@import '../styles/breakpoints.module.scss';
+
+
+.bus_con{
+
+    .bus_header{
+        margin-right: 15px;
+        margin-top: 4vh;
+        display: grid;
+        gap: 1vh;
+        
+        p{
+           
+            font-size: small;
+        }
+
+        @include breakpoint(small){
+            grid-template-columns: 1.5fr 2.5fr;
+
+        }
+
+       
+
+        .headright{
+            padding-inline: 10px;
+            button{
+                background-color: $font-color5;
+                color: $color2;
+                border-radius: 5px;
+            }
+            
+            h6, p{
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .headleft{
+            padding-inline: 10px;
+            -webkit-box-shadow: 1px 3px 9px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 9px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 3px 9px 0px rgba(0,0,0,0.75);
+            //background-color: green;
+            h6, p{
+                padding: 0;
+                margin: 0;
+            }
+
+            .left_text{
+                margin-bottom: 5px;
+                p{
+                    padding-top: -2px;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+    
+    
+
+}
+

@@ -5,6 +5,7 @@ import {SWRConfig} from 'swr'
 import axios from 'axios';
 import { Container } from 'react-bootstrap';
 import Layout from '../Components/Layout/Layout';
+import AuthenticationProviver from '../Components/Context/UserContext'
 
 
 function MyApp({ Component, pageProps }) {
@@ -16,7 +17,9 @@ function MyApp({ Component, pageProps }) {
   return <>
   <SWRConfig value={{fetcher: (url) => axios.get(url).then(res => res.data)}}>
     <Layout/>
-  <Component {...pageProps} />
+    <AuthenticationProviver>
+          <Component {...pageProps} />
+  </AuthenticationProviver>
   </SWRConfig>
 </>
 }

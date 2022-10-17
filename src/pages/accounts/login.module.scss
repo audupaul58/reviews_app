@@ -1,0 +1,55 @@
+@import "../../styles/breakpoints.module.scss";
+@import "../../styles/color.module.scss";
+
+
+.LogCont{
+    margin-top: 4vh;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+   
+    
+   
+    .innerCon{
+        padding: 10px;
+       width: 90vw;
+       -webkit-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.75);
+       -moz-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.75);
+       box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.75);
+       border-radius: 10px;
+      
+
+        @include breakpoint(small){
+            width: 400px;
+           
+        }
+
+        .formInput{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            .items{
+                width: 100%;
+                border-radius: 5px;
+                padding: 3px;
+                background-color: rgb(241, 233, 233);
+                border: none;
+                outline: none;
+               
+            }
+
+            button{
+                margin-inline: auto;
+                background-color: $font-color5;
+                min-width: 10vw;
+                color: $color1;
+                border-radius: 5px;
+            }
+
+            small{
+                color: $orange-color;
+            }
+        }
+    }
+}
